@@ -48,6 +48,7 @@ function App() {
           stroke="currentColor"
           className="w-6 h-6"
         >
+          <title>Image QR Code</title>
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
