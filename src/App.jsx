@@ -20,7 +20,7 @@ function App() {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onClick={() => setValue('')}
-          arial-label="Escribe el texto"
+          aria-label="Escribe el texto"
         />
       </div>
 
