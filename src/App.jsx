@@ -39,7 +39,7 @@ function App() {
         {size} x {size}
       </span>
       <button
-        className="bg-teal-700 hover:bg-accent text-2xl rounded-md p-2 my-8 px-6 text-white flex flex-row justify-center items-center gap-4"
+        className="bg-teal-700 hover:bg-accent text-2xl rounded-md p-2 my-8 px-6 text-white flex flex-row justify-center items-center gap-4 active:scale-95 transition-transform duration-100 ease-in-out"
         onClick={handleSave}
       >
         <svg
