@@ -20,6 +20,7 @@ function App() {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onClick={() => setValue('')}
+          arial-label="Escribe el texto"
         />
       </div>
 
@@ -32,6 +33,7 @@ function App() {
         value={size}
         step="16"
         onChange={(e) => setSize(Number(e.target.value))}
+        aria-label="Elige el tamaño"
       />
       <span className="text-xl text-teal-900">
         {size} x {size}
