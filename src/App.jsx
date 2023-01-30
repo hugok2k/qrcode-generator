@@ -20,11 +20,11 @@ function App() {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onClick={() => setValue('')}
-          aria-label="Escribe el texto"
+          aria-label="Write a text"
         />
       </div>
 
-      <span className="text-xl text-teal-900 mt-8">Elige el tamaño</span>
+      <span className="text-xl text-teal-900 mt-8">Resize QR Code</span>
       <input
         className="range range-accent range-xs w-60 min my-2"
         type="range"
@@ -33,7 +33,7 @@ function App() {
         value={size}
         step="16"
         onChange={(e) => setSize(Number(e.target.value))}
-        aria-label="Elige el tamaño"
+        aria-label="Resize QR Code"
       />
       <span className="text-xl text-teal-900">
         {size} x {size}
