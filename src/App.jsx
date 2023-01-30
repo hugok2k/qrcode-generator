@@ -33,11 +33,11 @@ function App() {
         step="16"
         onChange={(e) => setSize(Number(e.target.value))}
       />
-      <span className="text-xl">
+      <span className="text-xl text-teal-900">
         {size} x {size}
       </span>
       <button
-        className="bg-accent hover:bg-teal-700 text-2xl rounded-md p-2 my-8 px-6 text-white flex flex-row justify-center items-center gap-4"
+        className="bg-teal-700 hover:bg-accent text-2xl rounded-md p-2 my-8 px-6 text-white flex flex-row justify-center items-center gap-4"
         onClick={handleSave}
       >
         <svg
