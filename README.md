@@ -2,7 +2,7 @@
 
 Generador de código QR
 
-![Screenshot QR Code](https://hugoavila.vercel.app/images/qr-gen.webp)
+![Screenshot QR Code](/public/qr-gen.webp)
 
 Caracteristicas:
 - Tamaño personalizado
