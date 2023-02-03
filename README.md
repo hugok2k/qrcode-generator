@@ -5,6 +5,7 @@ Generador de código QR
 ![Screenshot QR Code](/public/qr-gen.webp)
 
 Caracteristicas:
+- ReactJS + TailwindCSS + Daisyui
 - Tamaño personalizado
 - Descarga como PNG
 
