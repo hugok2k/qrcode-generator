@@ -17,7 +17,7 @@ export default function Footer() {
           Hugo Avila
         </a>
       </p>
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex flex-row justify-center items-center gap-6">
         <a
           href="https://github.com/hugok2k"
           target="_blank"
@@ -34,6 +34,14 @@ export default function Footer() {
           <LinkedInSVG />
           Linkedin
         </a>
+        <img
+          decoding="async"
+          loading="eager"
+          fetchPriority="low"
+          src="https://librecounter.org/counter.svg"
+          referrerPolicy="unsafe-url"
+          className="w-[1px] h-[1px]"
+        />
       </div>
     </footer>
   )
