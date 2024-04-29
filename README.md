@@ -9,7 +9,7 @@ Caracteristicas:
 - Tamaño personalizado
 - Descarga como PNG
 
-[🔗 Demo](https://qrcode-k2k.vercel.app/)
+[🔗 Demo](https://qrcode-generator2024.vercel.app/)
 
 ### Para usarlo localmente:
 
