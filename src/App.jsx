@@ -18,7 +18,7 @@ function App() {
         </div>
         <div className="flex flex-row justify-center items-center">
           <input
-            className="text-xl border-2 text-slate-500 bg-slate-50 border-teal-500 hover:border-teal-700 rounded-md my-8 outline-none p-2 text-center"
+            className="text-xl border-2 text-slate-500 bg-slate-50 border-teal-500 hover:border-teal-700 rounded-md my-8 outline-hidden p-2 text-center"
             type="text"
             value={value}
             onChange={(e) => setValue(e.target.value)}
