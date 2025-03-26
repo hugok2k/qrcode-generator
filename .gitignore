@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Vercel deploy
-pnpm-lock.yaml
 pnpm-workspace.yaml
