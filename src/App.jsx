@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="flex flex-col justify-evenly items-center bg-slate-100 w-full h-full min-h-screen">
       <main className="flex flex-col justify-center items-center w-full font-bold scroll-smooth">
-        <h1 className="mb-8 text-5xl text-black text-center mt-14">QR Code Generator</h1>
-        <div className="qr-code my-8 bg-black border-[16px] border-white  outline-black outline-[16px] outline-double rounded-md">
+        <h1 className="mb-8 text-5xl text-gray-900 text-center mt-14">QR Code Generator</h1>
+        <div className="qr-code my-8 bg-white p-4 rounded-md" style={{ boxShadow: '0 0 0 16px white, 0 0 0 18px black' }}>
           <QRCode value={value} size={size} />
         </div>
         <div className="flex flex-row justify-center items-center">
@@ -41,7 +41,7 @@ function App() {
           {size} x {size}
         </span>
         <button
-          className="flex flex-row justify-center items-center bg-teal-700 hover:bg-accent text-xl rounded-md px-6 py-2 my-10 text-white gap-4 active:scale-95 transition-transform duration-100 ease-in-out"
+          className="flex flex-row justify-center items-center bg-teal-700 hover:bg-teal-500 text-xl rounded-md px-6 py-2 my-10 text-white gap-4 active:scale-95 transition-transform duration-200 ease-in-out cursor-pointer"
           onClick={handleSave}
         >
           <DownloadSVG />
