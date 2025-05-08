@@ -8,6 +8,16 @@ import '@fontsource-variable/jetbrains-mono'
 function App() {
   const [value, setValue] = useState('www.google.com')
   const [size, setSize] = useState(192)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleDownload = async () => {
+    setIsLoading(true)
+    try {
+      await handleSave()
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <div className="flex flex-col justify-evenly items-center bg-slate-100 w-full h-full min-h-screen">
@@ -41,11 +51,16 @@ function App() {
           {size} x {size}
         </span>
         <button
-          className="flex flex-row justify-center items-center bg-teal-700 hover:bg-teal-500 text-xl rounded-md px-6 py-2 my-10 text-white gap-4 active:scale-95 transition-transform duration-200 ease-in-out cursor-pointer"
-          onClick={handleSave}
+          className="flex flex-row justify-center items-center bg-teal-700 hover:bg-teal-500 text-xl rounded-md px-6 py-2 my-10 text-white gap-4 active:scale-95 transition-transform duration-200 ease-in-out cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-teal-700"
+          onClick={handleDownload}
+          disabled={isLoading}
         >
-          <DownloadSVG />
-          <span className="block">Download PNG</span>
+          {isLoading ? (
+            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+          ) : (
+            <DownloadSVG />
+          )}
+          <span className="block">{isLoading ? 'Generating...' : 'Download PNG'}</span>
         </button>
       </main>
       <Footer />
