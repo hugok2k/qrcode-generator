@@ -10,7 +10,7 @@ export default function Footer() {
         </span>
         by
         <a
-          href="https://hugoavila.vercel.app/"
+          href="https://hugoavila.dev/"
           target="_blank"
           className="text-orange-500 cursor-pointer hover:text-orange-700"
         >
