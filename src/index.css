@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin "daisyui";
 
 /*
@@ -10,7 +10,6 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-
   *,
   ::after,
   ::before,
@@ -21,5 +20,6 @@
 }
 
 body {
-  font-family: 'JetBrains Mono Variable', monospace;
+  font-family: "JetBrains Mono Variable", monospace;
+  background-color: #f9f3f4;
 }

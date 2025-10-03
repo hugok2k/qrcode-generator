@@ -29,24 +29,24 @@ function App() {
         <div className="mr-4 flex gap-2">
           <button
             type="button"
-            className="text-sm text-slate-600 hover:underline cursor-pointer"
-            onClick={() => changeLang("en")}
-          >
-            EN
-          </button>
-          <span className="text-black"> / </span>
-          <button
-            type="button"
-            className="text-sm text-slate-600 hover:underline cursor-pointer"
+            className={`text-sm hover:underline cursor-pointer ${i18n.language === "es" ? "text-white bg-[#00786f]" : "text-black"} px-1 py-2 font-semibold`}
             onClick={() => changeLang("es")}
           >
             ES
+          </button>
+          <div className="h-auto w-[2px] bg-[#00786f]"></div>
+          <button
+            type="button"
+            className={`text-sm hover:underline cursor-pointer ${i18n.language === "en" ? "text-white bg-[#00786f]" : "text-black"} px-1 py-2 font-semibold`}
+            onClick={() => changeLang("en")}
+          >
+            EN
           </button>
         </div>
       </header>
       <main className="flex flex-col justify-center items-center w-full font-bold scroll-smooth">
         <div className="flex flex-row items-center gap-4 mt-10">
-          <h1 className="mb-8 text-4xl md:text-5xl text-gray-900 text-center">{t("title")}</h1>
+          <h1 className="mb-8 text-4xl md:text-4xl text-gray-900 text-center">{t("title")}</h1>
         </div>
         <div
           className="qr-code my-8 bg-white p-4 rounded-md"
@@ -54,9 +54,10 @@ function App() {
         >
           <QRCode value={value} size={size} />
         </div>
+        <p className="text-xs text-gray-600 mt-2 text-center max-w-prose px-4">{t("note")}</p>
         <div className="flex flex-row justify-center items-center">
           <input
-            className="text-xl border-2 text-slate-500 bg-slate-50 border-teal-500 hover:border-teal-700 rounded-md my-8 outline-hidden p-2 text-center"
+            className="text-xl border-2 text-slate-500 bg-slate-50 border-teal-500 hover:border-teal-700 rounded-md my-6 outline-hidden p-2 text-center"
             type="text"
             value={value}
             onChange={(e) => setValue(e.target.value)}
@@ -64,8 +65,7 @@ function App() {
             aria-label="Write a text"
           />
         </div>
-        <p className="text-sm text-gray-600 mt-2 text-center max-w-prose px-4">{t("note")}</p>
-        <span className="text-xl text-teal-900 mt-8">{t("resize")}</span>
+        <span className="text-xl text-teal-900 mt-4">{t("resize")}</span>
         <input
           className="range range-accent range-xs w-60 min my-2"
           type="range"
