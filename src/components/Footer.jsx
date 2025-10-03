@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="flex flex-col justify-center items-center text-lg text-teal-900 min-h-36">
+    <footer className="flex flex-col justify-center items-center text-lg text-teal-900">
       <p className="flex gap-2">
         {t("made_with")}
         <span role="img" aria-label="love" className="text-red-700">
