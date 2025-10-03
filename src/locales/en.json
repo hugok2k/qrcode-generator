@@ -3,7 +3,7 @@
   "resize": "Resize QR Code",
   "download": "Download PNG",
   "generating": "Generating...",
-  "note": "Note: If you enter a URL, it must be complete and include https:// to work correctly.",
+  "note": "Note: If you enter a URL, it must be complete and include <strong>https://</strong> to work correctly.",
   "made_with": "Made with",
   "by": "by",
   "github": "Github",

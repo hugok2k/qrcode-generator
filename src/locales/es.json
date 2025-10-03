@@ -3,7 +3,7 @@
   "resize": "Redimensionar QR",
   "download": "Descargar PNG",
   "generating": "Generando...",
-  "note": "Nota: Si introduces una URL, debe ser completa e incluir https:// para que funcione correctamente.",
+  "note": "Nota: Si introduces una URL, debe ser completa e incluir <strong>https://</strong> para que funcione correctamente.",
   "made_with": "Hecho con",
   "by": "por",
   "github": "Github",
