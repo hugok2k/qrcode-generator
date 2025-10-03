@@ -11,6 +11,9 @@
 ### Changed
 - Wired translations into `App.jsx` and `components/Footer.jsx`
 - Footer text now uses translations; external links use `rel="noopener noreferrer"`
+- Extracted download buttons into a reusable `DownloadButton` component (`src/components/DownloadButton.jsx`).
+- Keep the visible button label stable while downloading (spinner shown in the icon area only) to avoid layout shifts when generating files.
+- Improved accessibility: added `aria-busy` on the button and a screen-reader-only status message while generating.
 
 ### Dependencies
 - Added `i18next` and `react-i18next`
