@@ -1,0 +1,11 @@
+{
+  "title": "Generador de códigos QR",
+  "resize": "Redimensionar QR",
+  "download": "Descargar PNG",
+  "generating": "Generando...",
+  "note": "Nota: Si introduces una URL, debe ser completa e incluir https:// para que funcione correctamente.",
+  "made_with": "Hecho con",
+  "by": "por",
+  "github": "Github",
+  "linkedin": "Linkedin"
+}
