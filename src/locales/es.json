@@ -1,7 +1,10 @@
 {
   "title": "Generador de códigos QR",
-  "resize": "Redimensionar QR",
+  "resize": "Seleccionar tamaño",
+  "custom": "Personalizado",
+  "custom_size": "Tamaño personalizado",
   "download": "Descargar PNG",
+  "download_error": "Ocurrió un error al descargar el archivo.",
   "generating": "Generando...",
   "note": "Nota: Si introduces una URL, debe ser completa e incluir <strong>https://</strong> para que funcione correctamente.",
   "made_with": "Hecho con",
