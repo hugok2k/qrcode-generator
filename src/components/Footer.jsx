@@ -40,17 +40,17 @@ export default function Footer() {
           <LinkedInSVG />
           {t("linkedin")}
         </a>
-        {/** biome-ignore lint/a11y/useAltText: Esto solo se usa para estadísticas  */}
-        {/** biome-ignore lint/performance/noImgElement: Esto solo se usa para estadísticas */}
-        <img
-          decoding="async"
-          loading="eager"
-          fetchPriority="low"
-          src="https://librecounter.org/counter.svg"
-          referrerPolicy="unsafe-url"
-          className="w-[1px] h-[1px]"
-        />
       </div>
+      {/** biome-ignore lint/a11y/useAltText: Esto solo se usa para estadísticas  */}
+      {/** biome-ignore lint/performance/noImgElement: Esto solo se usa para estadísticas */}
+      <img
+        decoding="async"
+        loading="eager"
+        fetchPriority="low"
+        src="https://librecounter.org/counter.svg"
+        referrerPolicy="unsafe-url"
+        className="w-[1px] h-[1px]"
+      />
     </footer>
   )
 }
