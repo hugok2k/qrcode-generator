@@ -4,7 +4,7 @@ import Footer from "./components/Footer.jsx"
 import { DownloadSVG } from "./components/SVG.jsx"
 import { handleSave } from "./utils/handleSave.js"
 import "@fontsource-variable/jetbrains-mono"
-import { useTranslation } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 import Header from "./components/Header.jsx"
 
 function App() {
@@ -37,7 +37,9 @@ function App() {
         >
           <QRCode value={value} size={size} />
         </div>
-        <p className="text-xs text-gray-600 mt-2 text-center max-w-prose px-4">{t("note")}</p>
+        <p className="text-xs text-gray-600 mt-2 text-center max-w-prose px-4">
+          <Trans i18nKey="note" />
+        </p>
         <div className="flex flex-row justify-center items-center">
           <input
             className="text-xl border-2 text-slate-500 bg-slate-50 border-teal-500 hover:border-teal-700 rounded-md my-6 outline-hidden p-2 text-center"
