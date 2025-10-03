@@ -22,4 +22,5 @@
 body {
   font-family: "JetBrains Mono Variable", monospace;
   background-color: #f9f3f4;
+  scroll-behavior: smooth;
 }
