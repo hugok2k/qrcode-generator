@@ -5,6 +5,7 @@ import { DownloadSVG } from "./components/SVG.jsx"
 import { handleSave } from "./utils/handleSave.js"
 import "@fontsource-variable/jetbrains-mono"
 import { useTranslation } from "react-i18next"
+import Header from "./components/Header.jsx"
 
 function App() {
   const [value, setValue] = useState("https://www.google.com")
@@ -25,25 +26,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-evenly items-center bg-slate-100 w-full h-full min-h-screen">
-      <header className="flex flex-row justify-end items-center w-full p-4">
-        <div className="mr-4 flex gap-2">
-          <button
-            type="button"
-            className={`text-sm hover:underline cursor-pointer ${i18n.language === "es" ? "text-white bg-[#00786f]" : "text-black"} px-1 py-2 font-semibold`}
-            onClick={() => changeLang("es")}
-          >
-            ES
-          </button>
-          <div className="h-auto w-[2px] bg-[#00786f]"></div>
-          <button
-            type="button"
-            className={`text-sm hover:underline cursor-pointer ${i18n.language === "en" ? "text-white bg-[#00786f]" : "text-black"} px-1 py-2 font-semibold`}
-            onClick={() => changeLang("en")}
-          >
-            EN
-          </button>
-        </div>
-      </header>
+      <Header changeLang={changeLang} i18n={i18n} />
       <main className="flex flex-col justify-center items-center w-full font-bold scroll-smooth">
         <div className="flex flex-row items-center gap-4 mt-10">
           <h1 className="mb-8 text-4xl md:text-4xl text-gray-900 text-center">{t("title")}</h1>
