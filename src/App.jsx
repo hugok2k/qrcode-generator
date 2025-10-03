@@ -6,7 +6,7 @@ import { DownloadSVG } from './components/SVG.jsx'
 import '@fontsource-variable/jetbrains-mono'
 
 function App() {
-  const [value, setValue] = useState('www.google.com')
+  const [value, setValue] = useState('https://www.google.com')
   const [size, setSize] = useState(192)
   const [isLoading, setIsLoading] = useState(false)
 
