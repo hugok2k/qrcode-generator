@@ -1,7 +1,10 @@
 {
   "title": "QR Code Generator",
-  "resize": "Resize QR Code",
+  "resize": "Select size",
+  "custom": "Custom",
+  "custom_size": "Custom size",
   "download": "Download PNG",
+  "download_error": "An error occurred while downloading the file.",
   "generating": "Generating...",
   "note": "Note: If you enter a URL, it must be complete and include <strong>https://</strong> to work correctly.",
   "made_with": "Made with",
