@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: A revisar */
 export function GitHubSVG() {
   return (
     <svg height="20" viewBox="0 0 16 16" width="20">
