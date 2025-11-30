@@ -49,7 +49,7 @@ export default function Footer() {
         fetchPriority="low"
         src="https://librecounter.org/counter.svg"
         referrerPolicy="unsafe-url"
-        className="w-[1px] h-[1px]"
+        className="w-px h-px"
       />
     </footer>
   )
