@@ -8,6 +8,7 @@ import "@fontsource-variable/jetbrains-mono"
 import { Trans, useTranslation } from "react-i18next"
 import { Toaster } from "sonner"
 import Header from "./components/Header.jsx"
+import RadioLabel from "./components/RadioLabel.jsx"
 
 function App() {
   const [value, setValue] = useState("https://www.google.com")
@@ -37,16 +38,16 @@ function App() {
       <Header changeLang={changeLang} i18n={i18n} />
       <Toaster />
       <main className="flex flex-col justify-center items-center w-full font-bold">
-        <div className="flex flex-row items-center gap-4 mt-10">
-          <h1 className="mb-8 text-4xl md:text-4xl text-gray-900 text-center">{t("title")}</h1>
-        </div>
+        <h1 className="mb-8 text-4xl md:text-4xl text-gray-900 text-center text-balance mt-10 md:mt-4 px-4">
+          {t("title")}
+        </h1>
         <div
           className="qr-code my-8 bg-white p-4 rounded-md"
           style={{ boxShadow: "0 0 0 16px white, 0 0 0 18px black" }}
         >
           <QRCode value={value} size={size} style={{ width: `${size}px`, height: `${size}px` }} />
         </div>
-        <p className="text-xs text-gray-600 mt-2 text-center max-w-prose px-4">
+        <p className="text-xs text-gray-700 mt-2 text-left max-w-prose px-4">
           <Trans i18nKey="note" />
         </p>
         <div className="flex flex-row justify-center items-center">
@@ -60,83 +61,57 @@ function App() {
           />
         </div>
         <span className="text-xl text-teal-900 mt-4">{t("resize")}</span>
-        <div className="flex flex-col items-center my-2">
+        <div className="flex flex-col items-center my-2 px-4">
           <div className="flex flex-col items-start gap-2">
-            <div className="flex flex-row items-center gap-3 text-black">
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-128"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "128"}
-                  onChange={() => togglePreset("128")}
-                  aria-label="128 x 128 preset"
-                />
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-black">
+              <RadioLabel
+                id="preset-128"
+                checked={preset === "128"}
+                onChange={() => togglePreset("128")}
+                ariaLabel="128 x 128 preset"
+              >
                 128 x 128
-              </label>
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-192"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "192"}
-                  onChange={() => togglePreset("192")}
-                  aria-label="192 x 192 preset"
-                />
+              </RadioLabel>
+              <RadioLabel
+                id="preset-192"
+                checked={preset === "192"}
+                onChange={() => togglePreset("192")}
+                ariaLabel="192 x 192 preset"
+              >
                 192 x 192
-              </label>
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-256"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "256"}
-                  onChange={() => togglePreset("256")}
-                  aria-label="256 x 256 preset"
-                />
+              </RadioLabel>
+              <RadioLabel
+                id="preset-256"
+                checked={preset === "256"}
+                onChange={() => togglePreset("256")}
+                ariaLabel="256 x 256 preset"
+              >
                 256 x 256
-              </label>
-            </div>
-            <div className="flex flex-row items-center gap-3 text-black">
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-384"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "384"}
-                  onChange={() => togglePreset("384")}
-                  aria-label="384 x 384 preset"
-                />
+              </RadioLabel>
+              <RadioLabel
+                id="preset-384"
+                checked={preset === "384"}
+                onChange={() => togglePreset("384")}
+                ariaLabel="384 x 384 preset"
+              >
                 384 x 384
-              </label>
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-512"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "512"}
-                  onChange={() => togglePreset("512")}
-                  aria-label="512 x 512 preset"
-                />
+              </RadioLabel>
+              <RadioLabel
+                id="preset-512"
+                checked={preset === "512"}
+                onChange={() => togglePreset("512")}
+                ariaLabel="512 x 512 preset"
+              >
                 512 x 512
-              </label>
-              <label className="flex items-center gap-2 text-sm">
-                <input
-                  id="preset-custom"
-                  type="radio"
-                  name="preset-radio"
-                  className="radio radio-success"
-                  checked={preset === "custom"}
-                  onChange={() => togglePreset("custom")}
-                  aria-label="Custom preset"
-                />
+              </RadioLabel>
+              <RadioLabel
+                id="preset-custom"
+                checked={preset === "custom"}
+                onChange={() => togglePreset("custom")}
+                ariaLabel="Custom preset"
+              >
                 {t("custom") ?? "Personalizado"}
-              </label>
+              </RadioLabel>
             </div>
           </div>
 
