@@ -9,7 +9,7 @@ export default function Header({ changeLang, i18n }) {
         >
           ES
         </button>
-        <div className="h-auto w-[2px] bg-[#00786f]"></div>
+        <div className="h-auto w-0.5 bg-[#00786f]"></div>
         <button
           type="button"
           className={`text-sm hover:underline cursor-pointer ${i18n.language === "en" ? "text-white bg-[#00786f]" : "text-black"} px-1 py-2 font-semibold`}
