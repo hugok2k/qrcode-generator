@@ -13,24 +13,24 @@
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
-    "@tailwindcss/vite": "^4.3.3",
-    "html2canvas-pro": "^2.5.2",
-    "i18next": "^26.5.10",
+    "@tailwindcss/vite": "^4.3.5",
+    "html2canvas-pro": "^2.6.4",
+    "i18next": "^27.2.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-i18next": "^17.1.8",
+    "react-i18next": "^18.0.2",
     "react-qr-code": "^2.2.0",
     "sonner": "^2.0.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.3",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@biomejs/biome": "2.6.8",
+    "@tailwindcss/postcss": "^4.3.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react-swc": "^4.3.3",
-    "daisyui": "^5.7.50",
-    "postcss": "^8.5.31",
-    "tailwindcss": "^4.3.3",
-    "vite": "^8.3.5"
+    "daisyui": "^5.8.1",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
   }
 }
